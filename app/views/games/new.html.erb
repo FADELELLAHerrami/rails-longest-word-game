@@ -1,0 +1,24 @@
+
+
+
+
+
+
+
+<h1>New game</h1>
+<div class="container m-6">
+  <div class="row gap-2 m-6">
+    <% @alphabets.map do |alphabet| %>
+      <div class="btn btn-primary col m-6">
+        <p class="fs-6 fw-bold"><%= alphabet %></p>
+      </div>
+    <% end %>
+  </div>
+  <div class="mb-3 mt-3">
+    <form action="result" method="GET">
+      <label>What is the longest word you can find ?</label>
+      <input type="text" class="form-control"  aria-describedby="button-addon2" name="SearchName">
+      <input class="btn btn-outline-secondary" value="Play" type="submit">
+    <form>
+</div>
+</div>
